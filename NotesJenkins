@@ -1,0 +1,102 @@
+Questions:
+when you choose maven or when freestyle project?
+
+
+
+cd src
+javac Main.java
+java Main, then you will see:
+abracadabra
+abracadabra
+abracadabra
+abracadabra
+abracadabra
+
+Jenkins - it is user interface tools, that needs to be installed on server.
+Devops are making installation
+devops controll jenkins
+qa is not taking control of that. you like making configuration using it.
+I have worked with it in my team, im familiar with it, but usually the devops taking control of that.
+I have not directly working with it, i know how it works, i know it's concepts,
+i just tell the developers my link and they do connecting jenkin with it and that's it.
+
+
+testing server - it is testing environment.
+
+connect with a project.
+run a project in a server
+email if the project is successfully built
+
+
+executable file - is a file, which is already compiled
+executable file - file that can run a machine which code is ready to run
+it contains machine code
+
+jenkin_user
+syntax123
+
+
+JENKINS:
+
+new item: - create a project (we call it a job)
+write name of project
+choose Maven project (or sometimes freestyle project)
+build - version
+(if we choose choice parameter: choice like runnerClasses, then you put different runners classes that u want to run,
+in this case you go to COALS AND OPTIONS: WRITE $RunnersClasses
+then you go to build with runnerclasses)
+
+
+Source course management - choose Git
+if its public - give url
+private - give credentials
+
+Branch -keep blank , it will pick your by default main branch
+
+Build Triggers - Poll SCM (source course management)
+(IT MEANS you GIVE A TIME,
+5 stars - means every 1 minute, your project  will look to your git hub repository every 1 min.
+Poll means - polling, checking, SCM -source course management, = CHECKING source course management,
+check the github automatically, if it has some updates it build the project again)
+
+Build Environment: usually don't choose anything
+(Delete workspace before build starts : delete all data in project before new project creating)
+
+Build: (usually don't choose)
+(if u are like tester: Execute shell - command from
+command window: echo "hello world")
+
+Root pom: - pom.xml
+
+Goals and options:(which particular runners class you want to run)
+ write -
+mvn test -Dtest=RunnerClass
+clean install -Dtest=RunnerClass (choose clean install not mvn test)
+Dtest - like flag, gives settings for test case
+ means selecting particular runner class.
+
+
+Post Steps: click on -> run regadless of build result.
+Build setting:
+Post-build Actions: (sometimes choose Cucumber reports
+then you add after"**/" cucumber before .json) then click apply and save.
+or choose: buil other projects
+Projects to build: testersb14 (trigger build only if it is stable)
+
+
+
+
+tu run my project click :
+Build now
+
+
+
+
+
+free style project
+
+continius integration and deployment
+you continiously integrate the code and contiously deploy it
+
+
+i just tell the developers my link and they do connecting jenkin with it and that's it.
